@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ótica Marias | Enxergue além do óbvio</title>
+<meta name="description" content="Óculos de sol, óculos de grau e armações selecionados por design, conforto e personalidade. Converse com a Ótica Marias pelo WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#111111;--paper:#FAF9F6;--sand:#E9E1D5;--stone:#77736D;--umber:#392E27;
+--serif:"Cormorant Garamond","Playfair Display",Georgia,serif;--sans:"Manrope","Inter",system-ui,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:72px;height:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1rem/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+h1,h2,h3,p{margin:0}
+a{color:inherit}
+:focus-visible{outline:2px solid #B99A5B;outline-offset:3px}
+.wrap{width:min(1280px,100% - 48px);margin-inline:auto}
+.serif{font-family:var(--serif)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 28px;border:1px solid currentColor;background:none;color:inherit;font:500 .78rem/1 var(--sans);letter-spacing:.16em;text-decoration:none;cursor:pointer;transition:background .3s,color .3s,border-color .3s}
+.btn.solid{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.btn.solid:hover{background:transparent;color:var(--paper)}
+.btn.ghost:hover{background:var(--paper);color:var(--ink)}
+.btn.dark{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.btn.dark:hover{background:transparent;color:var(--ink)}
+/* nav */
+nav{position:fixed;inset:0 0 auto;z-index:20;padding-top:env(safe-area-inset-top,0px);color:var(--paper);mix-blend-mode:normal;transition:background .4s}
+nav.solid{background:rgba(17,17,17,.92);backdrop-filter:blur(8px)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font:500 1.5rem/1 var(--serif);letter-spacing:.32em;text-decoration:none}
+nav ul{display:flex;gap:36px;list-style:none;margin:0;padding:0;font-size:.85rem}
+nav ul a{text-decoration:none;opacity:.85}nav ul a:hover{opacity:1}
+nav .btn{min-height:40px;padding:0 20px;font-size:.7rem}
+@media(max-width:820px){nav ul{display:none}nav .btn{padding:0 14px}}
+@media(max-width:420px){nav .btn{display:none}}
+/* hero */
+.hero{position:relative;min-height:100vh;min-height:100svh;background:var(--ink);color:var(--paper);overflow:hidden;display:grid;align-items:end;padding:120px 0 56px}
+.hero .glow{position:absolute;right:-10%;top:8%;width:70vw;height:70vw;max-width:980px;max-height:980px;border-radius:50%;background:radial-gradient(circle,#392E27 0,transparent 68%);opacity:.9}
+.hero .art{position:absolute;right:2vw;top:50%;width:min(860px,64vw);transform:translateY(-58%) rotate(-6deg);color:var(--sand);will-change:transform}
+.hero .art svg{width:100%;height:auto;display:block;filter:drop-shadow(0 40px 50px rgba(0,0,0,.5))}
+.hero h1{position:relative;font:500 clamp(3.2rem,10.5vw,9.5rem)/.9 var(--serif);letter-spacing:-.01em}
+.hero h1 span{display:block}
+.hero h1 span:nth-child(2){padding-left:.9em}
+.hero .row{position:relative;display:flex;flex-wrap:wrap;gap:32px 64px;align-items:flex-end;justify-content:space-between;margin-top:48px}
+.hero p{max-width:34ch;color:var(--sand);font-size:1.05rem}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px}
+.hero .tag{position:absolute;left:0;top:-80px;font-size:.78rem;letter-spacing:.2em;color:var(--stone)}
+.scroll{position:absolute;right:24px;bottom:56px;width:1px;height:64px;background:var(--stone);overflow:hidden}
+.scroll::after{content:"";position:absolute;left:0;top:-30px;width:1px;height:30px;background:var(--paper);animation:drop 2.2s ease-in-out infinite}
+@keyframes drop{to{top:64px}}
+@media(max-width:820px){.hero .art{width:130vw;right:-30vw;top:30%}.scroll{display:none}.hero h1 span:nth-child(2){padding-left:.4em}.hero .tag{top:-64px}}
+/* identity */
+.ident{padding:clamp(88px,14vw,200px) 0}
+.ident h2{font:400 clamp(2.2rem,5.6vw,5rem)/1.05 var(--serif);max-width:15ch}
+.ident .lead{max-width:44ch;margin:40px 0 0 auto;color:var(--stone)}
+.trio{display:grid;grid-template-columns:repeat(3,1fr);margin-top:clamp(64px,9vw,128px);border-top:1px solid var(--ink)}
+.trio div{padding:28px 28px 8px 0}
+.trio div+div{border-left:1px solid #d6cfc2;padding-left:28px}
+.trio b{display:block;font:400 clamp(4rem,9vw,8rem)/1 var(--serif);color:var(--sand)}
+.trio h3{font:500 1.6rem/1.2 var(--serif);margin-top:8px}
+.trio p{color:var(--stone);margin-top:8px;max-width:24ch}
+@media(max-width:720px){.trio{grid-template-columns:1fr}.trio div+div{border-left:0;border-top:1px solid #d6cfc2;padding-left:0}.ident .lead{margin-left:0}}
+/* collection */
+.coll{background:var(--sand);padding:clamp(72px,10vw,140px) 0}
+.coll header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:16px;margin-bottom:48px}
+.coll h2{font:400 clamp(2.4rem,6vw,5.4rem)/1 var(--serif)}
+.coll header p{max-width:36ch;color:var(--umber)}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:20px}
+.card{position:relative;grid-column:span 4;display:flex;flex-direction:column;background:none;border:0;padding:0;text-align:left;color:inherit;font:inherit;cursor:pointer}
+.card:nth-child(1){grid-column:span 7}.card:nth-child(2){grid-column:span 5}
+.card:nth-child(5){grid-column:span 5}.card:nth-child(6){grid-column:span 7}
+.ph{position:relative;aspect-ratio:4/3;display:grid;place-items:center;overflow:hidden;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.card:nth-child(2) .ph,.card:nth-child(3) .ph,.card:nth-child(4) .ph,.card:nth-child(5) .ph{aspect-ratio:4/4.6}
+.card:hover .ph svg,.card:focus-visible .ph svg{transform:scale(1.06) rotate(-2deg)}
+.ph svg{width:74%;height:auto;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.info{display:flex;justify-content:space-between;gap:16px;padding:16px 2px 0}
+.info h3{font:500 1.7rem/1.1 var(--serif)}
+.info small{display:block;color:var(--umber);font-size:.85rem}
+.info em{font:normal 500 .95rem var(--sans);white-space:nowrap}
+.demo{margin-top:28px;font-size:.8rem;color:var(--umber)}
+@media(max-width:820px){.card,.card:nth-child(n){grid-column:1/-1}.ph,.card:nth-child(n) .ph{aspect-ratio:4/3.4}}
+dialog{border:0;padding:0;width:min(880px,100% - 32px);background:var(--paper);color:var(--ink)}
+dialog::backdrop{background:rgba(17,17,17,.7)}
+dialog[open]{animation:pop .35s ease}
+@keyframes pop{from{opacity:0;transform:translateY(16px)}}
+.mod{display:grid;grid-template-columns:1fr 1fr}
+.mod .ph{aspect-ratio:auto;min-height:320px}
+.mod .txt{padding:40px 36px;display:flex;flex-direction:column;gap:14px;justify-content:center}
+.mod h3{font:500 2.4rem/1 var(--serif)}
+.mod .x{position:absolute;right:12px;top:12px;width:44px;height:44px;border:0;background:rgba(250,249,246,.8);font-size:1.4rem;cursor:pointer}
+@media(max-width:700px){.mod{grid-template-columns:1fr}.mod .ph{min-height:240px}}
+/* impact */
+.impact{position:relative;background:var(--umber);color:var(--paper);padding:clamp(120px,20vw,280px) 0;overflow:hidden;text-align:center}
+.impact .art{position:absolute;inset:0;display:grid;place-items:center;color:#4a3d34;pointer-events:none}
+.impact .art svg{width:min(1200px,130%);height:auto}
+.impact h2{position:relative;font:400 clamp(3rem,9.5vw,8.5rem)/.92 var(--serif)}
+.impact p{position:relative;max-width:34ch;margin:32px auto 36px;color:var(--sand)}
+/* diff */
+.diff{padding:clamp(80px,11vw,160px) 0}
+.diff .wrap{display:grid;grid-template-columns:5fr 7fr;gap:64px}
+.diff h2{font:400 clamp(2.2rem,4.6vw,4rem)/1.05 var(--serif)}
+.diff ul{list-style:none;margin:0;padding:0}
+.diff li{display:grid;grid-template-columns:36px 1fr;gap:16px;padding:22px 0;border-top:1px solid #d6cfc2}
+.diff li:last-child{border-bottom:1px solid #d6cfc2}
+.diff svg{width:24px;height:24px;stroke:var(--umber);fill:none;stroke-width:1.4;margin-top:4px}
+.diff h3{font:500 1.5rem/1.2 var(--serif)}
+.diff li p{color:var(--stone)}
+@media(max-width:820px){.diff .wrap{grid-template-columns:1fr;gap:32px}}
+/* quiz */
+.quiz{background:var(--ink);color:var(--paper);padding:clamp(72px,10vw,140px) 0}
+.quiz h2{font:400 clamp(2.2rem,5vw,4.4rem)/1.05 var(--serif);margin-bottom:40px}
+.opts{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.opt{position:relative;aspect-ratio:3/4;border:1px solid #3a3a3a;background:#1a1a1a;color:var(--sand);display:flex;flex-direction:column;justify-content:flex-end;align-items:flex-start;padding:18px;font:500 1.5rem var(--serif);cursor:pointer;overflow:hidden;transition:border-color .3s,background .3s,color .3s}
+.opt svg{position:absolute;left:10%;top:22%;width:80%;opacity:.9;transition:transform .5s}
+.opt:hover svg{transform:translateY(-6px)}
+.opt[aria-pressed=true]{background:var(--sand);color:var(--ink);border-color:var(--sand)}
+.res{margin-top:36px;min-height:130px;display:flex;flex-wrap:wrap;gap:24px 48px;align-items:center;justify-content:space-between;border-top:1px solid #3a3a3a;padding-top:28px}
+.res p{max-width:46ch;font:400 clamp(1.4rem,2.6vw,2.1rem)/1.25 var(--serif)}
+@media(max-width:820px){.opts{grid-template-columns:repeat(2,1fr)}}
+/* final */
+.final{background:var(--ink);color:var(--paper);padding:clamp(100px,16vw,220px) 0;border-top:1px solid #2a2a2a}
+.final h2{font:400 clamp(2.8rem,8vw,7.5rem)/.95 var(--serif);max-width:12ch}
+.final p{max-width:36ch;color:var(--sand);margin:32px 0 36px}
+footer{background:var(--ink);color:var(--sand);padding:56px 0 40px;border-top:1px solid #2a2a2a;font-size:.88rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:32px}
+footer p{max-width:28ch;color:var(--stone);margin-top:12px}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+footer a{text-decoration:none}footer a:hover{text-decoration:underline}
+.copy{width:min(1280px,100% - 48px);margin:40px auto 0;color:var(--stone);font-size:.78rem}
+/* reveal */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.on{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav id="nav"><div class="wrap">
+<a class="logo" href="#topo" aria-label="Ótica Marias, início">MARIAS</a>
+<ul><li><a href="#colecao">Coleção</a></li><li><a href="#essencia">Nossa essência</a></li><li><a href="#contato">Contato</a></li></ul>
+<a class="btn ghost" data-wa="Olá! Gostaria de falar com um especialista da Ótica Marias." href="#contato">FALE COM UM ESPECIALISTA</a>
+</div></nav>
+
+<header class="hero" id="topo">
+<div class="glow"></div>
+<div class="art" id="heroArt" aria-hidden="true"></div>
+<div class="wrap" style="position:relative">
+<div class="tag">EYEWEAR · DESIGN · IDENTITY &nbsp;/&nbsp; Coleção 01</div>
+<h1><span>ENXERGUE</span><span>ALÉM DO</span><span>ÓBVIO.</span></h1>
+<div class="row">
+<p>Óculos que traduzem sua personalidade. Design, conforto e autenticidade em cada detalhe.</p>
+<div class="cta"><a class="btn solid" href="#colecao">EXPLORE A COLEÇÃO</a><a class="btn ghost" href="#estilo">ENCONTRE SEU ESTILO</a></div>
+</div></div>
+<div class="scroll" aria-hidden="true"></div>
+</header>
+
+<section class="ident" id="essencia"><div class="wrap">
+<h2 class="rv">Não é apenas o que você vê. É como você se apresenta ao mundo.</h2>
+<p class="lead rv">Acreditamos que os detalhes revelam quem somos. Por isso, selecionamos óculos que equilibram estética, conforto e personalidade, para pessoas que valorizam cada escolha.</p>
+<div class="trio rv">
+<div><b>01</b><h3>Design</h3><p>Formas que expressam personalidade.</p></div>
+<div><b>02</b><h3>Conforto</h3><p>Leveza pensada para acompanhar você.</p></div>
+<div><b>03</b><h3>Identidade</h3><p>Detalhes que tornam seu estilo único.</p></div>
+</div></div></section>
+
+<section class="coll" id="colecao"><div class="wrap">
+<header><h2 class="rv">A coleção</h2><p>Sol, grau e armações contemporâneas ou clássicas. Toque em um modelo para consultar disponibilidade.</p></header>
+<div class="grid" id="grid"></div>
+<p class="demo">Modelos e preços demonstrativos, editáveis em CONFIG.products no código.</p>
+</div></section>
+
+<section class="impact" aria-labelledby="imp">
+<div class="art" id="impArt" aria-hidden="true"></div>
+<div class="wrap"><h2 id="imp" class="rv">SEU OLHAR.<br>SUA ASSINATURA.</h2>
+<p>Encontre a peça que combina com a sua maneira de ver o mundo.</p>
+<a class="btn solid" href="#contato">DESCUBRA A ÓTICA MARIAS</a></div>
+</section>
+
+<section class="diff"><div class="wrap">
+<h2 class="rv">O que você encontra na Ótica Marias</h2>
+<ul class="rv" id="diffs"></ul>
+</div></section>
+
+<section class="quiz" id="estilo"><div class="wrap">
+<h2>Qual estilo combina com você?</h2>
+<div class="opts" id="opts" role="group" aria-label="Escolha um estilo"></div>
+<div class="res" aria-live="polite"><p id="resTxt">Escolha uma das opções para ver modelos que combinam com você.</p><a id="resBtn" class="btn solid" hidden>CONSULTAR MODELOS</a></div>
+</div></section>
+
+<section class="final" id="contato"><div class="wrap">
+<h2 class="rv">SEU PRÓXIMO OLHAR COMEÇA AQUI.</h2>
+<p>Descubra modelos que combinam com você. Nossa equipe está pronta para ajudar na escolha.</p>
+<a class="btn solid" data-wa="Olá! Conheci a Ótica Marias pelo site e gostaria de conhecer os modelos disponíveis." href="#contato">CONVERSE COM A ÓTICA MARIAS</a>
+</div></section>
+
+<footer><div class="wrap">
+<div><a class="logo" href="#topo">MARIAS</a><p>Óculos para quem escolhe com atenção.</p></div>
+<ul><li><a href="#colecao">Coleção</a></li><li><a href="#essencia">Nossa essência</a></li><li><a href="#estilo">Encontre seu estilo</a></li></ul>
+<ul id="social"><li><a data-wa="Olá! Conheci a Ótica Marias pelo site." href="#contato">WhatsApp</a></li></ul>
+</div><div class="copy">© <span id="yr"></span> Ótica Marias. Todos os direitos reservados.</div></footer>
+
+<dialog id="dlg" aria-label="Detalhes do modelo"></dialog>
+
+<script>
+/* ====== CONFIGURAÇÃO: edite aqui ====== */
+const CONFIG={
+  brand:"Ótica Marias",
+  whatsapp:"5500000000000",   /* PLACEHOLDER: troque pelo número oficial, só dígitos com DDI e DDD */
+  instagram:"",                /* ex.: "https://instagram.com/seuperfil" (vazio = oculto) */
+  /* img: caminho de uma foto sua (ex.: "img/aurora.jpg"). Vazio = ilustração. Preços são demonstrativos. */
+  products:[
+    {name:"Aurora",cat:"Óculos de sol",shape:"round",price:"R$ 490",desc:"Armação redonda em acetato, lentes degradê.",bg:"#392E27",fg:"#E9E1D5",img:""},
+    {name:"Meridiano",cat:"Armação contemporânea",shape:"square",price:"R$ 420",desc:"Linhas retas e frente marcante, para grau.",bg:"#FAF9F6",fg:"#111111",img:""},
+    {name:"Névoa",cat:"Óculos de sol",shape:"cat",price:"R$ 530",desc:"Formato gatinho com silhueta alongada.",bg:"#111111",fg:"#E9E1D5",img:""},
+    {name:"Atlas",cat:"Modelo clássico",shape:"aviator",price:"R$ 560",desc:"Aviador fino, leve para o dia inteiro.",bg:"#77736D",fg:"#FAF9F6",img:""},
+    {name:"Prisma",cat:"Óculos de grau",shape:"rect",price:"R$ 390",desc:"Retangular discreta, versátil para o trabalho.",bg:"#FAF9F6",fg:"#392E27",img:""},
+    {name:"Marfim",cat:"Modelo clássico",shape:"brow",price:"R$ 450",desc:"Browline com contraste entre topo e aro.",bg:"#392E27",fg:"#FAF9F6",img:""}
+  ],
+  diffs:[
+    ["Curadoria de modelos","Peças escolhidas por design e conforto.","eye"],
+    ["Atendimento personalizado","Conversa direta com um especialista.","msg"],
+    ["Orientação para a armação ideal","Ajudamos a combinar formato e rosto.","scan"],
+    ["Opções para diferentes estilos","Do minimalista ao ousado.","layers"],
+    ["Suporte sobre lentes e produtos","Tire dúvidas antes de decidir.","help"]
+  ],
+  styles:{
+    Minimalista:{shape:"rect",msg:"Linhas limpas e cores neutras: armações finas que quase desaparecem."},
+    Clássico:{shape:"aviator",msg:"Formas atemporais, como aviador e browline, que não saem de moda."},
+    Contemporâneo:{shape:"square",msg:"Geometria atual e acabamento marcante, com presença sem excesso."},
+    Ousado:{shape:"cat",msg:"Volume, formas alongadas e cor: para quem quer ser notado."}
+  }
+};
+/* ====== utilidades ====== */
+const $=s=>document.querySelector(s);
+const wa=t=>"https://wa.me/"+CONFIG.whatsapp+"?text="+encodeURIComponent(t);
+function glasses(s){
+  const L={
+    round:'<circle cx="120" cy="100" r="62"/><circle cx="380" cy="100" r="62"/>',
+    square:'<rect x="56" y="48" width="130" height="104" rx="14"/><rect x="314" y="48" width="130" height="104" rx="14"/>',
+    cat:'<path d="M54 86Q56 56 100 56H168Q196 58 190 100Q182 148 126 146Q68 144 54 86Z"/><path d="M446 86Q444 56 400 56H332Q304 58 310 100Q318 148 374 146Q432 144 446 86Z"/>',
+    aviator:'<path d="M58 62H186Q196 62 192 80Q182 150 118 150Q60 148 54 84Q52 64 58 62Z"/><path d="M442 62H314Q304 62 308 80Q318 150 382 150Q440 148 446 84Q448 64 442 62Z"/>',
+    rect:'<rect x="52" y="64" width="140" height="82" rx="10"/><rect x="308" y="64" width="140" height="82" rx="10"/>',
+    brow:'<path d="M52 66Q120 40 190 66V120Q190 150 122 150Q52 150 52 120Z"/><path d="M448 66Q380 40 310 66V120Q310 150 378 150Q448 150 448 120Z"/>'
+  };
+  return '<svg viewBox="0 0 500 200" fill="none" stroke="currentColor" stroke-width="7" stroke-linejoin="round" aria-hidden="true"><g fill="currentColor" fill-opacity=".14">'+L[s]+'</g><path d="M190 86Q250 62 310 86" stroke-width="6"/><path d="M52 90L8 78M448 90L492 78" stroke-width="6" stroke-linecap="round"/></svg>';
+}
+/* ====== montagem ====== */
+$("#heroArt").innerHTML=glasses("round");
+$("#impArt").innerHTML=glasses("cat");
+$("#yr").textContent=new Date().getFullYear();
+$("#grid").innerHTML=CONFIG.products.map((p,i)=>
+ `<button class="card rv" data-i="${i}" aria-haspopup="dialog" aria-label="${p.name}, ${p.cat}, ${p.price}. Ver detalhes"><div class="ph" style="background:${p.bg};color:${p.fg}">${glasses(p.shape)}${p.img?`<img src="${p.img}" alt="${p.name}, ${p.cat}" loading="lazy" onerror="this.remove()">`:""}</div><div class="info"><div><h3>${p.name}</h3><small>${p.cat}</small></div><em>${p.price}</em></div></button>`).join("");
+const icons={eye:'<path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>',msg:'<path d="M21 12a8 8 0 0 1-12 7l-5 1 1-4a8 8 0 1 1 16-4z"/>',scan:'<path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3"/><circle cx="12" cy="12" r="3"/>',layers:'<path d="M12 3 3 8l9 5 9-5-9-5zM3 13l9 5 9-5"/>',help:'<circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 .9-1 1.7M12 17h.01"/>'};
+$("#diffs").innerHTML=CONFIG.diffs.map(d=>`<li><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">${icons[d[2]]}</svg><div><h3>${d[0]}</h3><p>${d[1]}</p></div></li>`).join("");
+$("#opts").innerHTML=Object.entries(CONFIG.styles).map(([k,v])=>`<button class="opt" aria-pressed="false" data-k="${k}">${glasses(v.shape)}<span>${k}</span></button>`).join("");
+if(CONFIG.instagram)$("#social").insertAdjacentHTML("beforeend",`<li><a href="${CONFIG.instagram}" target="_blank" rel="noopener">Instagram</a></li>`);
+document.querySelectorAll("[data-wa]").forEach(a=>{a.href=wa(a.dataset.wa);a.target="_blank";a.rel="noopener"});
+/* modal de produto */
+const dlg=$("#dlg");
+$("#grid").addEventListener("click",e=>{
+  const c=e.target.closest(".card");if(!c)return;
+  const p=CONFIG.products[c.dataset.i];
+  dlg.innerHTML=`<div class="mod"><div class="ph" style="background:${p.bg};color:${p.fg}">${glasses(p.shape)}${p.img?`<img src="${p.img}" alt="${p.name}" onerror="this.remove()">`:""}</div><div class="txt"><small>${p.cat}</small><h3>${p.name}</h3><p>${p.desc}</p><p><strong>${p.price}</strong></p><a class="btn dark" target="_blank" rel="noopener" href="${wa("Olá! Tenho interesse no modelo "+p.name+" ("+p.cat+"). Ele está disponível?")}">CONSULTAR DISPONIBILIDADE</a></div><button class="x" aria-label="Fechar" onclick="dlg.close()">×</button></div>`;
+  dlg.showModal();
+});
+dlg.addEventListener("click",e=>{if(e.target===dlg)dlg.close()});
+/* guia de estilos */
+$("#opts").addEventListener("click",e=>{
+  const b=e.target.closest(".opt");if(!b)return;
+  document.querySelectorAll(".opt").forEach(o=>o.setAttribute("aria-pressed",o===b));
+  const k=b.dataset.k,s=CONFIG.styles[k];
+  $("#resTxt").textContent=k+": "+s.msg;
+  const r=$("#resBtn");r.hidden=false;r.target="_blank";r.rel="noopener";
+  r.href=wa("Olá! Meu estilo é "+k.toLowerCase()+" e gostaria de ver modelos que combinem.");
+});
+/* rolagem: nav e revelação */
+const nav=$("#nav");const onS=()=>nav.classList.toggle("solid",scrollY>60);onS();addEventListener("scroll",onS,{passive:true});
+const still=matchMedia("(prefers-reduced-motion:reduce)").matches;
+if("IntersectionObserver" in window&&!still){
+  const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add("on");io.unobserve(x.target)}}),{threshold:.12});
+  document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+}else document.querySelectorAll(".rv").forEach(el=>el.classList.add("on"));
+/* hero: óculos acompanha o ponteiro */
+if(!still){
+  const art=$("#heroArt");
+  addEventListener("pointermove",e=>{
+    if(scrollY>innerHeight)return;
+    const x=(e.clientX/innerWidth-.5)*2,y=(e.clientY/innerHeight-.5)*2;
+    art.style.transform=`translateY(-58%) translate(${x*-18}px,${y*-12}px) rotate(${-6+x*2}deg)`;
+  },{passive:true});
+}
+</script>
+</body>
+</html>
